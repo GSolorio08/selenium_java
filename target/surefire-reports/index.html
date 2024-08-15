@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -124,6 +124,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="tests.Tests" class="method navigator-link" hash-for-method="TC_Smoke_05_Get_loginByElements">TC_Smoke_05_Get_loginByElements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="tests.Tests" class="method navigator-link" hash-for-method="TC_Smoke_06_Verify_WebTitle">TC_Smoke_06_Verify_WebTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -179,6 +184,13 @@
                   <span class="method-name">TC_Smoke_05_Get_loginByElements</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_Smoke_06_Verify_WebTitle">
+                  </a> <!-- TC_Smoke_06_Verify_WebTitle -->
+                  <span class="method-name">TC_Smoke_06_Verify_WebTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Surefire_suite-class-passed -->
         </div> <!-- panel Surefire_suite -->
@@ -232,27 +244,31 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_Smoke_02_RIGHT_PASSWORD')
+data.setCell(0, 1, 'TC_Smoke_06_Verify_WebTitle')
 data.setCell(0, 2, 'tests.Tests')
-data.setCell(0, 3, 3619);
+data.setCell(0, 3, 3054);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC_Smoke_03_Dropdown_Validation')
 data.setCell(1, 2, 'tests.Tests')
-data.setCell(1, 3, 869);
+data.setCell(1, 3, 947);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_Smoke_01_WRG_PASSWORD')
+data.setCell(2, 1, 'TC_Smoke_05_Get_loginByElements')
 data.setCell(2, 2, 'tests.Tests')
-data.setCell(2, 3, 565);
+data.setCell(2, 3, 500);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_Smoke_05_Get_loginByElements')
+data.setCell(3, 1, 'TC_Smoke_02_RIGHT_PASSWORD')
 data.setCell(3, 2, 'tests.Tests')
-data.setCell(3, 3, 529);
+data.setCell(3, 3, 490);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_Smoke_04_Get_InputElements')
+data.setCell(4, 1, 'TC_Smoke_01_WRG_PASSWORD')
 data.setCell(4, 2, 'tests.Tests')
-data.setCell(4, 3, 17);
+data.setCell(4, 3, 483);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC_Smoke_04_Get_InputElements')
+data.setCell(5, 2, 'tests.Tests')
+data.setCell(5, 3, 18);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
@@ -290,59 +306,71 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_Smoke_01_WRG_PASSWORD</span>
-                <span class="method-start">2137 ms</span>
+                <span class="method-start">2280 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC_Smoke_01_WRG_PASSWORD status=SUCCESS method=Tests.TC_Smoke_01_WRG_PASSWORD()[pri...)</span>
-                <span class="method-start">2704 ms</span>
+                <span class="method-start">2766 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">3027 ms</span>
+                <span class="method-start">2932 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_Smoke_02_RIGHT_PASSWORD</span>
-                <span class="method-start">11903 ms</span>
+                <span class="method-start">12399 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC_Smoke_02_RIGHT_PASSWORD status=SUCCESS method=Tests.TC_Smoke_02_RIGHT_PASSWORD()...)</span>
-                <span class="method-start">15524 ms</span>
+                <span class="method-start">12890 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">16012 ms</span>
+                <span class="method-start">13092 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_Smoke_03_Dropdown_Validation</span>
-                <span class="method-start">17535 ms</span>
+                <span class="method-start">14630 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC_Smoke_03_Dropdown_Validation status=SUCCESS method=Tests.TC_Smoke_03_Dropdown_Va...)</span>
-                <span class="method-start">18405 ms</span>
+                <span class="method-start">15578 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">18783 ms</span>
+                <span class="method-start">15766 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_Smoke_04_Get_InputElements</span>
-                <span class="method-start">27324 ms</span>
+                <span class="method-start">24462 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC_Smoke_04_Get_InputElements status=SUCCESS method=Tests.TC_Smoke_04_Get_InputElem...)</span>
-                <span class="method-start">27341 ms</span>
+                <span class="method-start">24480 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">27724 ms</span>
+                <span class="method-start">24640 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_Smoke_05_Get_loginByElements</span>
-                <span class="method-start">29292 ms</span>
+                <span class="method-start">26150 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC_Smoke_05_Get_loginByElements status=SUCCESS method=Tests.TC_Smoke_05_Get_loginBy...)</span>
-                <span class="method-start">29821 ms</span>
+                <span class="method-start">26650 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">26832 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_Smoke_06_Verify_WebTitle</span>
+                <span class="method-start">35585 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC_Smoke_06_Verify_WebTitle status=SUCCESS method=Tests.TC_Smoke_06_Verify_WebTitle...)</span>
+                <span class="method-start">38640 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -89,6 +89,11 @@ public class Tests {
 		webPage.LoginByElementsFields();
 	}
 	
+	@Test
+	public void TC_Smoke_06_Verify_WebTitle() {
+		Assert.assertEquals(webPage.get_title(),constants.TITLE_TEXT);
+	}
+	
 	@AfterMethod
 	//Destroy the objects used in test
 	public void tearDown(ITestResult result) {

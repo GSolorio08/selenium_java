@@ -23,6 +23,7 @@ public class page_methods {
 	private By sortingDropdownList;
 	private By fields;
 	private By spans;
+	private By title;
 	
 	Wait<WebDriver> wait;
 	WebElement log_btn;
@@ -86,6 +87,12 @@ public class page_methods {
 		this.DropdownList = wait.until(ExpectedConditions.visibilityOfElementLocated(sortingDropdownList));
 		List<WebElement> spanPageElements = driver.findElements(spans);
 		Assert.assertTrue(spanPageElements.get(0).getText().contains(constants.SUCCESS_STRING));
+		}
+	
+	public String get_title() {
+		this.log_btn = wait.until(ExpectedConditions.visibilityOfElementLocated(loginBtn));
+		String title_text =driver.getTitle();
+		return (title_text);
 		}
 	
 }

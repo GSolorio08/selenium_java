@@ -19,6 +19,7 @@ public class constants {
     public static final String SUCCESS_STRING = "Products";
     public static final String WEB_PAGE = "https://www.saucedemo.com/";
     public static final String NEW_TAB_WEB_PAGE = "https://www.google.com/";
+    public static final String TITLE_TEXT = "Swag Labs";
     
 	//Dropdown List elements
     public static final int DROP_DW_LIST_INDEX = 3;
