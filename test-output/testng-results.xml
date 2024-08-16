@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-16T11:46:55 CST" name="Default suite" finished-at="2024-08-16T11:47:05 CST" duration-ms="9863">
+    <groups>
+    </groups>
+    <test started-at="2024-08-16T11:46:55 CST" name="Default test" finished-at="2024-08-16T11:47:05 CST" duration-ms="9863">
+      <class name="tests.Tests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Tests@7ce69770]" started-at="2024-08-16T11:46:55 CST" name="setUp" finished-at="2024-08-16T11:46:58 CST" duration-ms="2397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_Smoke_02_RIGHT_PASSWORD()[pri:0, instance:tests.Tests@7ce69770]" started-at="2024-08-16T11:46:58 CST" name="TC_Smoke_02_RIGHT_PASSWORD" description="Login Correcto" finished-at="2024-08-16T11:47:05 CST" duration-ms="7301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Smoke_02_RIGHT_PASSWORD -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@7ce69770]" started-at="2024-08-16T11:47:05 CST" name="tearDown" finished-at="2024-08-16T11:47:05 CST" duration-ms="106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_Smoke_02_RIGHT_PASSWORD status=SUCCESS method=Tests.TC_Smoke_02_RIGHT_PASSWORD()[pri:0, instance:tests.Tests@7ce69770] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

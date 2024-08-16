@@ -2,126 +2,128 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-15T15:15:15 CST" name="Surefire suite" finished-at="2024-08-15T15:15:28 CST" duration-ms="12831">
+  <suite started-at="2024-08-16T12:01:59 CST" name="Surefire suite" finished-at="2024-08-16T12:02:19 CST" duration-ms="19772">
     <groups>
     </groups>
-    <test started-at="2024-08-15T15:15:15 CST" name="Surefire test" finished-at="2024-08-15T15:15:28 CST" duration-ms="12831">
-      <class name="tests.Tests">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:15 CST" name="setUp" finished-at="2024-08-15T15:15:18 CST" duration-ms="2435" status="PASS">
+    <test started-at="2024-08-16T12:01:59 CST" name="Surefire test" finished-at="2024-08-16T12:02:19 CST" duration-ms="19772">
+      <class name="tests.TS01_LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TS01_LoginTest@124c278f]" started-at="2024-08-16T12:01:59 CST" name="setUp" finished-at="2024-08-16T12:02:08 CST" duration-ms="9193" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_Smoke_01_WRG_PASSWORD()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:18 CST" name="TC_Smoke_01_WRG_PASSWORD" finished-at="2024-08-15T15:15:18 CST" duration-ms="349" status="PASS">
+        <test-method signature="TC_Smoke_01_WRG_PASSWORD()[pri:0, instance:tests.TS01_LoginTest@124c278f]" started-at="2024-08-16T12:02:08 CST" name="TC_Smoke_01_WRG_PASSWORD" description="Login Incorrecto" finished-at="2024-08-16T12:02:09 CST" duration-ms="360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Smoke_01_WRG_PASSWORD -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:18 CST" name="tearDown" finished-at="2024-08-15T15:15:18 CST" duration-ms="92" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TS01_LoginTest@124c278f]" started-at="2024-08-16T12:02:09 CST" name="tearDown" finished-at="2024-08-16T12:02:09 CST" duration-ms="84" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Smoke_01_WRG_PASSWORD status=SUCCESS method=Tests.TC_Smoke_01_WRG_PASSWORD()[pri:0, instance:tests.Tests@2ddc8ecb] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Smoke_01_WRG_PASSWORD status=SUCCESS method=TS01_LoginTest.TC_Smoke_01_WRG_PASSWORD()[pri:0, instance:tests.TS01_LoginTest@124c278f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:18 CST" name="setUp" finished-at="2024-08-15T15:15:20 CST" duration-ms="1596" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TS01_LoginTest@124c278f]" started-at="2024-08-16T12:02:09 CST" name="setUp" finished-at="2024-08-16T12:02:11 CST" duration-ms="1722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_Smoke_02_RIGHT_PASSWORD()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:20 CST" name="TC_Smoke_02_RIGHT_PASSWORD" finished-at="2024-08-15T15:15:20 CST" duration-ms="452" status="PASS">
+        <test-method signature="TC_Smoke_02_RIGHT_PASSWORD()[pri:0, instance:tests.TS01_LoginTest@124c278f]" started-at="2024-08-16T12:02:11 CST" name="TC_Smoke_02_RIGHT_PASSWORD" description="Login Correcto" finished-at="2024-08-16T12:02:11 CST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Smoke_02_RIGHT_PASSWORD -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:20 CST" name="tearDown" finished-at="2024-08-15T15:15:20 CST" duration-ms="80" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TS01_LoginTest@124c278f]" started-at="2024-08-16T12:02:11 CST" name="tearDown" finished-at="2024-08-16T12:02:11 CST" duration-ms="106" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Smoke_02_RIGHT_PASSWORD status=SUCCESS method=Tests.TC_Smoke_02_RIGHT_PASSWORD()[pri:0, instance:tests.Tests@2ddc8ecb] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Smoke_02_RIGHT_PASSWORD status=SUCCESS method=TS01_LoginTest.TC_Smoke_02_RIGHT_PASSWORD()[pri:0, instance:tests.TS01_LoginTest@124c278f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:20 CST" name="setUp" finished-at="2024-08-15T15:15:22 CST" duration-ms="1578" status="PASS">
+      </class> <!-- tests.TS01_LoginTest -->
+      <class name="tests.TS02_PageElementsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:11 CST" name="setUp" finished-at="2024-08-16T12:02:13 CST" duration-ms="1515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_Smoke_03_Dropdown_Validation()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:22 CST" name="TC_Smoke_03_Dropdown_Validation" finished-at="2024-08-15T15:15:23 CST" duration-ms="819" status="PASS">
+        <test-method signature="TC_Smoke_03_Dropdown_Validation()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:13 CST" name="TC_Smoke_03_Dropdown_Validation" description="Validacion de la lista dropdown de ordenamiento" finished-at="2024-08-16T12:02:13 CST" duration-ms="746" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Smoke_03_Dropdown_Validation -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:23 CST" name="tearDown" finished-at="2024-08-15T15:15:23 CST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:13 CST" name="tearDown" finished-at="2024-08-16T12:02:13 CST" duration-ms="84" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Smoke_03_Dropdown_Validation status=SUCCESS method=Tests.TC_Smoke_03_Dropdown_Validation()[pri:0, instance:tests.Tests@2ddc8ecb] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Smoke_03_Dropdown_Validation status=SUCCESS method=TS02_PageElementsTest.TC_Smoke_03_Dropdown_Validation()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:23 CST" name="setUp" finished-at="2024-08-15T15:15:24 CST" duration-ms="1487" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:13 CST" name="setUp" finished-at="2024-08-16T12:02:15 CST" duration-ms="1939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_Smoke_04_Get_InputElements()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:24 CST" name="TC_Smoke_04_Get_InputElements" finished-at="2024-08-15T15:15:24 CST" duration-ms="21" status="PASS">
+        <test-method signature="TC_Smoke_04_Get_InputElements()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:15 CST" name="TC_Smoke_04_Get_InputElements" description="Obtener todos los elementos input de la pagina web" finished-at="2024-08-16T12:02:15 CST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Smoke_04_Get_InputElements -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:24 CST" name="tearDown" finished-at="2024-08-15T15:15:24 CST" duration-ms="61" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:15 CST" name="tearDown" finished-at="2024-08-16T12:02:15 CST" duration-ms="70" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Smoke_04_Get_InputElements status=SUCCESS method=Tests.TC_Smoke_04_Get_InputElements()[pri:0, instance:tests.Tests@2ddc8ecb] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Smoke_04_Get_InputElements status=SUCCESS method=TS02_PageElementsTest.TC_Smoke_04_Get_InputElements()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:24 CST" name="setUp" finished-at="2024-08-15T15:15:26 CST" duration-ms="1596" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:15 CST" name="setUp" finished-at="2024-08-16T12:02:17 CST" duration-ms="1428" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_Smoke_05_Get_loginByElements()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:26 CST" name="TC_Smoke_05_Get_loginByElements" finished-at="2024-08-15T15:15:26 CST" duration-ms="409" status="PASS">
+        <test-method signature="TC_Smoke_05_Get_loginByElements()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:17 CST" name="TC_Smoke_05_Get_loginByElements" description="Login correcto a através del array elements de la pagina web" finished-at="2024-08-16T12:02:17 CST" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Smoke_05_Get_loginByElements -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:26 CST" name="tearDown" finished-at="2024-08-15T15:15:26 CST" duration-ms="74" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:17 CST" name="tearDown" finished-at="2024-08-16T12:02:17 CST" duration-ms="74" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Smoke_05_Get_loginByElements status=SUCCESS method=Tests.TC_Smoke_05_Get_loginByElements()[pri:0, instance:tests.Tests@2ddc8ecb] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Smoke_05_Get_loginByElements status=SUCCESS method=TS02_PageElementsTest.TC_Smoke_05_Get_loginByElements()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:26 CST" name="setUp" finished-at="2024-08-15T15:15:28 CST" duration-ms="1526" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:17 CST" name="setUp" finished-at="2024-08-16T12:02:19 CST" duration-ms="1535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_Smoke_06_Verify_WebTitle()[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:28 CST" name="TC_Smoke_06_Verify_WebTitle" finished-at="2024-08-15T15:15:28 CST" duration-ms="35" status="PASS">
+        <test-method signature="TC_Smoke_06_Verify_WebTitle()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:19 CST" name="TC_Smoke_06_Verify_WebTitle" description="Validacion del título de la página web" finished-at="2024-08-16T12:02:19 CST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Smoke_06_Verify_WebTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.Tests@2ddc8ecb]" started-at="2024-08-15T15:15:28 CST" name="tearDown" finished-at="2024-08-15T15:15:28 CST" duration-ms="70" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3]" started-at="2024-08-16T12:02:19 CST" name="tearDown" finished-at="2024-08-16T12:02:19 CST" duration-ms="63" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC_Smoke_06_Verify_WebTitle status=SUCCESS method=Tests.TC_Smoke_06_Verify_WebTitle()[pri:0, instance:tests.Tests@2ddc8ecb] output={null}]]]>
+                <![CDATA[[TestResult name=TC_Smoke_06_Verify_WebTitle status=SUCCESS method=TS02_PageElementsTest.TC_Smoke_06_Verify_WebTitle()[pri:0, instance:tests.TS02_PageElementsTest@48aaecc3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.Tests -->
+      </class> <!-- tests.TS02_PageElementsTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

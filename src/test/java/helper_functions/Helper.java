@@ -12,6 +12,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.ITestResult;
+
 import config.constants;
 
 
@@ -92,5 +95,30 @@ public class Helper {
 				*	driver.manage().window().setPosition(new Point(i,i));
 				*/
 		}
+	}
+	
+	public String PrintResult (ITestResult result) {
+		String TC_Result;
+		try {
+			switch(result.getStatus()) {
+			case (ITestResult.SUCCESS):
+				 TC_Result = (result.getMethod().getDescription() + ": " + "*****Passed*****");
+		    break;
+			case (ITestResult.FAILURE):
+				 TC_Result = (result.getMethod().getDescription() + ": " +"*****Failed*****");
+		    break;
+			case (ITestResult.SKIP):
+				 TC_Result = (result.getMethod().getDescription() + ": " +"*****Skiped*****");
+		    break;
+			default:
+				 TC_Result = (result.getMethod().getDescription() + ": " +"*****Not Defined*****");
+			}
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+			TC_Result = (result.getMethod().getDescription() + ": " +"*****Not Defined*****");
+		}
+		
+		return (TC_Result);
 	}
 }
