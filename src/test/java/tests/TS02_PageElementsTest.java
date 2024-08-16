@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import config.constants;
+import config.page_elements;
 
 public class TS02_PageElementsTest extends CommonConditions{
 	@Test(description = "Validacion de la lista dropdown de ordenamiento")
@@ -24,8 +25,13 @@ public class TS02_PageElementsTest extends CommonConditions{
 		webPage.LoginByElementsFields();
 	}
 	
-	@Test(description = "Validacion del título de la página web")
+	@Test(description = "Validacion del título de la pagina web")
 	public void TC_Smoke_06_Verify_WebTitle() {
 		Assert.assertEquals(webPage.get_title(),constants.TITLE_TEXT);
+	}
+	
+	@Test(description = "Validacion de elementos en un pagina web")
+	public void TC_Smoke_06_Verify_ExistElements() {
+		Assert.assertTrue(webPage.element_exists(), "No existe el elemento " + page_elements.ELEMENT_TO_SEARCH + "\n");
 	}
 }

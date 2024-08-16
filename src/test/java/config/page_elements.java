@@ -8,6 +8,7 @@ public class page_elements {
 	public static final  By passwordField = By.name("password");
 	public static final  By loginBtn = By.name("login-button");
 	public static final  By sortingDropdownList = By.className("product_sort_container");
+    public static final  By ELEMENT_TO_SEARCH = By.className("noExist");
 	
 	//Se define los nombres de los headers / containers que se usaran para validar los TC
 	public static final  By assertElement_TC1 = By.xpath("//*[@id=\"login_button_container\"]/div/form/div[3]/h3");

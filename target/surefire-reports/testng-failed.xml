@@ -3,16 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="tests.Tests">
+      <class name="tests.TS02_PageElementsTest">
         <methods>
-          <include name="TC_Smoke_01_WRG_PASSWORD"/>
-          <include name="setUp"/>
-          <include name="TC_Smoke_03_Dropdown_Validation"/>
-          <include name="TC_Smoke_02_RIGHT_PASSWORD"/>
-          <include name="TC_Smoke_05_Get_loginByElements"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="TC_Smoke_06_Verify_ExistElements"/>
         </methods>
-      </class> <!-- tests.Tests -->
+      </class> <!-- tests.TS02_PageElementsTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
