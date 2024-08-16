@@ -56,6 +56,10 @@ public class Helper {
 			e.printStackTrace();
 		}
 	}
+	
+	/* Funciones para crear y navegar en nuevas pestañas. 
+	 * OJO  el TC correrá sobre el selected tab, asi que siempre hay que ajustar el index
+	 */
 	/** Crear una nueva tab y abrir cierta URL **/
 	public void openNewTab(WebDriver driver, String newTabWebPage) {
 	    JavascriptExecutor executorJS = (JavascriptExecutor) driver;  // Casteo necesario

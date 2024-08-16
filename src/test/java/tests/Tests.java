@@ -10,6 +10,7 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -36,17 +37,14 @@ public class Tests {
 	public void setUp() {
 		DesiredCapabilities caps = new DesiredCapabilities();
 		System.setProperty("webdriver.chrome.driver", constants.CHROME_DRIVER_PATH);
-		driver = new ChromeDriver();
-		//driver.manage().window().maximize();
-		helper_functions.setWindowSize(driver, "maximize", 0, 0);
-
-		driver.navigate().to(constants.WEB_PAGE);
-		/* Funciones para crear y navegar en nuevas pestañas. 
-		 * OJO  el TC correrá sobre el selected tab, asi que siempre hay que ajustar el index
-		 * helper_functions.openNewTab(driver, constants.NEW_TAB_WEB_PAGE);
-		 * helper_functions.NavigateSelectTab(driver, 1, "https://www.youtube.com/");
-		 * helper_functions.SelectTab(driver, 0);
+		/*
+		 * Para correr las pruebas en modo headless, es decir sin entorno gráfico
 		 */
+		ChromeOptions chromeOptions = new ChromeOptions();
+		chromeOptions.addArguments("--headless");
+		driver = new ChromeDriver(chromeOptions); //Se agrega chromeOptions para poder correrlo en headeless
+		//driver.manage().window().maximize();
+		driver.navigate().to(constants.WEB_PAGE);
 		//helper_functions.mSeconds_wait(constants.WAIT_mSECONDS);
 		//driver.manage().timeouts().implicitlyWait(Duration.ofMillis(constants.TIMEOUT_ms)); //Espera a que cargue el DOM hasta el valor definido en TIMEOUT_ms
 		webPage = new page_methods(driver, 
@@ -56,7 +54,7 @@ public class Tests {
 									page_elements.sortingDropdownList); // Inicializar el objeto pageLogin
 		//el constructor recibe los nombres de los campos en la pagina web
 	}
-	@Test
+	@Test(description = "Login Incorrecto")
 	public void TC_Smoke_01_WRG_PASSWORD() {
 		helper_functions.setWindowSize(driver, "window_size", 800, 600);
 		webPage.login_method(constants.USER_NAME, constants.WRONG_PASSWORD); // Llamar al método de instancia en el objeto pageLogin
@@ -64,14 +62,14 @@ public class Tests {
 		Assert.assertTrue(driver.findElement(page_elements.assertElement_TC1).getText().contains(constants.FAIL_STRING));
 	}
 	
-	@Test
+	@Test(description = "Login Correcto")
 	public void TC_Smoke_02_RIGHT_PASSWORD() {
 		helper_functions.setWindowSize(driver, "fullscreen", 0, 0);
 		webPage.login_method(constants.USER_NAME, constants.CORRECT_PASSWORD); // Llamar al método de instancia en el objeto pageLogin
 		Assert.assertTrue(driver.findElement(page_elements.assertElement_TC2).getText().contains(constants.SUCCESS_STRING));
 	}
 	
-	@Test
+	@Test(description = "Validacion de la lista dropdown de ordenamiento")
 	public void TC_Smoke_03_Dropdown_Validation() {
 		helper_functions.setWindowSize(driver, "maximize", 800, 600);
 		webPage.login_method(constants.USER_NAME, constants.CORRECT_PASSWORD); // Llamar al método de instancia en el objeto pageLogin
@@ -79,17 +77,17 @@ public class Tests {
 		webPage.selectDropdownByVisibleText(constants.VISIBLE_TEXT);
 		webPage.selectDropdownByValue(constants.VALUE);
 	}
-	@Test
+	@Test(description = "Obtener todos los elementos input de la pagina web")
 	public void TC_Smoke_04_Get_InputElements() {
 		webPage.verifyFields();
 	}
 	
-	@Test
+	@Test(description = "Login correcto a através del array elements de la pagina web")
 	public void TC_Smoke_05_Get_loginByElements() {
 		webPage.LoginByElementsFields();
 	}
 	
-	@Test
+	@Test(description = "Validacion del título de la página web")
 	public void TC_Smoke_06_Verify_WebTitle() {
 		Assert.assertEquals(webPage.get_title(),constants.TITLE_TEXT);
 	}
